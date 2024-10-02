@@ -7,16 +7,17 @@
 
 main {
     display: flex;
+    justify-content: flex-start;
 }
 
 body {
     margin: 0px;
-    overflow-x: hidden;
     height: 100vh;
+    width: 100%;
 }
 
 header {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,14 +68,14 @@ header img{
 }
 
 .main-div p {
-    margin-left: 10px;
+    margin-left: 13px;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .media-content {
-    margin: 10px 20px 10px 10px;
+    margin: 10px 0px 10px 10px;
     display: flex;
     height: 40vh;
     width: 83vw;
@@ -91,7 +92,7 @@ footer {
     background-color: gray;
     text-align: center;
     height: 50px;
-    width: 100vw;
+    width: auto;
 }
 
 footer p {

@@ -6,7 +6,7 @@
 }
 
 body {
-background-color: #27374D;
+  background-color: #27374D;
 }
 
 header {
@@ -16,15 +16,17 @@ header {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
   & p {
     padding: 0px 10px 0px 10px;
     letter-spacing: 1.5px;
   }
 }
 
-.introduce{
+.introduce {
   width: 50%;
   height: 84vh;
   display: flex;
@@ -34,30 +36,30 @@ header {
   left: 25px;
 }
 
-.introduce img{
+.introduce img {
   width: 90%;
   height: 100%;
   object-fit: contain;
 }
 
-.introduce p{
+.introduce p {
   color: #DDE6ED;
   font-size: 3rem;
 }
 
-.introduce-text{
+.introduce-text {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
 
-main{
+main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.content{
+.content {
   position: relative;
   right: 30px;
   width: 100%;
@@ -95,7 +97,7 @@ footer {
   top: 0px;
 }
 
-.container a{
+.container a {
   text-decoration: none;
   color: white;
   font-family: sans-serif;
@@ -130,7 +132,7 @@ footer {
   justify-content: space-between;
 }
 
-.container .box .title{
+.container .box .title {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -142,30 +144,37 @@ footer {
 .container .box:hover {
   box-shadow: 0px 0px 20px 1px #ffbb763f;
   border: 1px solid rgba(255, 255, 255, 0.454);
-  & .title {color: #d2a411;
+
+  & .title {
+    color: #d2a411;
   }
 }
 
-.holygram{
+.holygram {
   position: absolute;
   top: 62%;
   left: 27%;
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     translate: 0px 36px;
   }
+
   50% {
     translate: 0px 46px;
   }
 }
+
 @keyframes bounce2 {
+
   0%,
   100% {
     translate: 0px 46px;
   }
+
   50% {
     translate: 0px 56px;
   }
@@ -175,42 +184,51 @@ footer {
   0% {
     stop-color: #d3a5102e;
   }
+
   50% {
     stop-color: rgba(211, 165, 16, 0.519);
   }
+
   100% {
     stop-color: #d3a5102e;
   }
 }
+
 @keyframes partciles {
+
   0%,
   100% {
     translate: 0px 16px;
   }
+
   50% {
     translate: 0px 6px;
   }
 }
+
 #particles {
   animation: partciles 4s ease-in-out infinite;
 }
+
 #animatedStop {
   animation: umbral 4s infinite;
 }
+
 #bounce {
   animation: bounce 4s ease-in-out infinite;
   translate: 0px 36px;
 }
+
 #bounce2 {
   animation: bounce2 4s ease-in-out infinite;
   translate: 0px 46px;
   animation-delay: 0.5s;
 }
 
-.social-links{
+.social-links {
   width: 350px;
   position: absolute;
-  top:45px;
+  top: 45px;
   left: 10px;
 }
 
@@ -234,7 +252,11 @@ footer {
   cursor: pointer;
 }
 
-.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4,.card .social-link5 {
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4,
+.card .social-link5 {
   position: relative;
   display: flex;
   align-items: center;
@@ -254,9 +276,9 @@ footer {
 .card .social-link1:hover {
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   animation: bounce_613 0.4s linear;
 }
 
